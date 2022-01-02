@@ -81,7 +81,7 @@ async function run() {
       ).catch(error => {
         throw error;
       });
-      setOutput("assets", assets);
+      setOutput("assets", JSON.stringify(assets));
     }
     console.log(`🎉 Release ready at ${rel.html_url}`);
     setOutput("url", rel.html_url);
